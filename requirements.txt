@@ -1,0 +1,5 @@
+numpy==1.24.1
+pycairo==1.23.0
+#scikit-spatial
+scipy
+svgwrite

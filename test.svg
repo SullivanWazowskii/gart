@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg baseProfile="full" height="1000" version="1.1" width="1000" xmlns="http://www.w3.org/2000/svg"
+     xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs/>
+<!--    <rect fill="white" height="1000" width="1000" x="0" y="0"/>-->
+<!--    <ellipse cx="198.931" cy="249.512" fill="orange" fill-opacity=".5" rx="60" ry="36" stroke="black" stroke-width="2"/>-->
+<!--    <ellipse cx="265.779" cy="75.778" fill="orange" rx="36" ry="60" stroke="black" stroke-width="2"/>-->
+<!--    <path d="M 0 320 L 40 280 A 30 60 0 0 1 150.71 170.29 L 172.55 152.45 A 30 50 -45 0 1 215.1 109.9 L 315 10"-->
+<!--          fill="green" fill-opacity=".5" stroke="black" stroke-width="2"/>-->
+    <polyline fill="green" fill-opacity="0.4" points="0,1000 500,500 600,100 700,1000" stroke="black"/>
+</svg>
