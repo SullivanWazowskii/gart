@@ -63,7 +63,7 @@ if __name__ == '__main__':
     dwg = svgwrite.Drawing(filename=f"test{17}.svg", size=(width, height), debug=True)
     dwg.add(dwg.rect(insert=(0, 0), size=(width, height), fill='white'))
 
-    magnet = [width / 3 - 47, - height / 3 + 17]
+    magnet = [width / 3 - 47, height / 3 + 17]
     magnet2 = [2 * width / 3, - 2 * height / 3]
     magnet3 = [width / 2, - height / 2]
     magnet4 = [4 * width / 3, 4 * height / 3]
@@ -83,8 +83,8 @@ if __name__ == '__main__':
 
     # force = 3.5
     #
-    for i in range(0, 200):
-        draw_line(i * 5)
+    for i in range(0, 1000):
+        draw_line(i * 3)
     # #
     # for i in range(1, 35):
     #     draw_line(i * -5)
