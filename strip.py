@@ -38,19 +38,10 @@ if __name__ == '__main__':
     magnet3 = [2.5 * width / 3, height / 3]
     magnet4 = [width / 3, 2 * height / 3]
 
-    # dwg.add(Circle(center=tuple(magnet), r=10, fill='red'))
-    # dwg.add(Circle(center=tuple(magnet2), r=10, fill='red'))
-    # dwg.add(Circle(center=tuple(magnet3), r=10, fill='red'))
-    # dwg.add(Circle(center=tuple(magnet4), r=10, fill='red'))
-    # dwg.add(Line(start=(width / 2, 0), end=(width / 2, height), stroke="red"))
-    # dwg.add(Line(start=(0, height / 2), end=(width, height / 2), stroke="red"))
-
     force = 4
 
     for i in range(0, 50):
         draw_line(i * 5)
 
-    # for i in range(0, 10):
-    #     draw_line(i * -5)
 
     dwg.save()

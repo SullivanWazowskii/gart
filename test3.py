@@ -7,18 +7,6 @@ from svgwrite.shapes import Polyline, Circle, Line
 from magnets import FishEye, Harmonizer
 
 
-#
-# def apply_magnet(x, y, m, f, d):
-#     distance = euclidean([x, y], m)
-#
-#     normed_distance = distance / ((width + height) / force)
-#
-#     result_y = y + d * pow(normed_distance * 5, f)
-#     # result_y = (distance * normed_distance)
-#     print(f"{distance} , {normed_distance}, {result_y}, {distance * normed_distance}")
-#     return result_y
-
-
 def draw_line(y_delta):
     points = []
     granularity = 10000

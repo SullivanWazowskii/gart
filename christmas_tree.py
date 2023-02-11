@@ -1,41 +1,13 @@
 import math
-import random
-from typing import Tuple
 
-from perlin_noise import PerlinNoise
-from scipy.spatial.distance import euclidean
 import svgwrite
-from svgwrite.shapes import Polyline, Circle, Line
-
-from magnets import FishEye, Harmonizer, Test
-
-
-def draw_line(y_delta, pad, color):
-    points = []
-    granularity = 100
-    for i in range(0, granularity):
-        x = i * (width / granularity)
-        # y = i * (height / granularity) + y_delta
-        y = y_delta + pad
-        # result_y1 = apply_magnet(x, y, magnet, force, -0.7)
-        # result_y2 = apply_magnet(x, result_y1, magnet2, force * 0.9, 1)
-        obj_apply = magnet_obj.apply((x, y))
-        # obj_apply = hmagnet_obj.apply((obj_apply[0], obj_apply[1]))
-
-        obj_apply = magnet4_obj.apply((obj_apply[0], obj_apply[1]))
-        obj_apply = magnet3_obj.apply((obj_apply[0], obj_apply[1]))
-        # obj_apply = magnet3_obj.apply((obj_apply[0], obj_apply[1]))
-
-        # obj_apply = magnet_obj_fish.apply((obj_apply[0], obj_apply[1]))
-        points.append((obj_apply[0], obj_apply[1]))
-    poly = Polyline(points=points, fill_opacity="0", stroke_width=1, stroke=color)
-    dwg.add(poly)
+from perlin_noise import PerlinNoise
+from svgwrite.shapes import Polyline
 
 
 def draw_spiral():
     points = []
     granularity = 100
-
 
     for i in range(0, granularity):
         c = 0
@@ -58,14 +30,13 @@ def draw_spiral():
             y0 = y + 500
             xc = 500
             yc = 500
-            rotate = 90 * math.pi/180
+            rotate = 90 * math.pi / 180
             x1 = (x0 - xc) * math.cos(rotate) - (y0 - yc) * math.sin(rotate) + xc
             y1 = (x0 - xc) * math.sin(rotate) + (y0 - yc) * math.cos(rotate) + yc
 
             points.append((x1, y1))
 
-    poly = Polyline(points=points,
-                    fill_opacity="0", stroke_width=1, stroke="green")
+    poly = Polyline(points=points, fill_opacity="0", stroke_width=1, stroke="green")
     dwg.add(poly)
 
 
